@@ -1,0 +1,107 @@
+// USER VARIABLES SECTION
+
+$accent: orange; // Accent Color
+$fontsize: 18px; // Body Font Size
+$textcolor: #8D8D8D; // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$roboto: Roboto, sans-serif; // Roboto Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import '../libs/bootstrap.min.css';
+@import '../libs/owl.carousel.min.css';
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+// @include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
+// @include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
+// @include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
+// @include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+button {
+	display: block;
+	border: none;
+	background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight:700;
+	color: #151515;
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	background: #4737FF;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 13px 26px;
+	display: inline;
+	border-radius: 0;
+	letter-spacing: 0.3em;
+	text-align: center;
+	transition: all 0.5s ease;
+	&:hover {
+		background: #3726F2;
+		color: #fff;
+	}
+}
+
+.be-static {
+	position: static;
+}
+
+.vh-dependent {
+	height: 35vh;
+	display: flex;
+	align-items: center;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: $textcolor;
+}
+
