@@ -1,0 +1,49 @@
+.result {
+	padding-top: 219px;
+}
+.collage {
+	padding-top: 219px;
+	width: 50%;
+	height: 540px;
+	background: url('../images/dest/img6.jpg') no-repeat left top / 80% 80%;
+	position: absolute;
+	left: 0;
+}
+.collage {
+	img {
+		display: block;
+		width: 350px;
+		height: 453px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		box-shadow: 30px 80px 130px rgba(0,0,0,0.25);
+	}
+}
+.ease {
+	margin-left: 65px;
+	&__title {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	&__text {
+		margin-bottom: 62px;
+	}
+	&__point {
+		padding-left: 83px;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		color: #000;
+		font-weight: 500;	
+		font-size: 14px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 25px;
+		&-first {
+			background: url('../images/dest/icon100.svg') no-repeat left; 
+		}
+		&-second {
+			background: url('../images/dest/bag.svg') no-repeat left;
+		}
+	}
+}
