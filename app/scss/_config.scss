@@ -54,9 +54,15 @@ input, textarea {
 }
 
 button {
-	display: block;
+	// display: block;
 	border: none;
 	background: transparent;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,6 +71,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #151515;
 	margin: 0;
 	padding: 0;
+}
+
+h2 {
+	font-size: 38px;
 }
 
 .btn {
