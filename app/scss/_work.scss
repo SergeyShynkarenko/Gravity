@@ -1,0 +1,60 @@
+.work {
+	padding-top: 283px;
+	&-tabs {
+		margin-left: 60px;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		margin-top: 70px;
+		&__item {
+			a {
+				text-decoration: none;
+				color: #8D8D8D;
+			}
+			&.active {
+				a{
+					color: #1434E1;
+				}
+			}
+		}
+	}
+	&-wrap {
+		flex-wrap: wrap;
+		margin-top: 108px;
+		&__item {
+			margin-bottom: 30px;
+			position: relative;
+			display: block;
+			&:hover:after {
+				content: '';
+				display: block;
+				background: url('../images/dest/play.svg');
+				width: 65px;
+				height: 65px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -32px;
+				margin-top: -32px;
+			}
+			img {
+				transition: all 1s ease;
+				display: block;
+				&:hover {
+					-moz-transform: scale(1.1);
+					-webkit-transform: scale(1.1);
+					-o-transform: scale(1.1);
+					-ms-transform: scale(1.1);
+					transform: scale(1.1);
+				}
+			}
+		}	
+	}
+}
+
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: flex; /* по умолчанию показываем нужный блок */
+}
