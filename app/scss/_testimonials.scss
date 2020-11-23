@@ -1,0 +1,21 @@
+.testimonials {
+	padding-top: 248px;
+}
+.contributor {
+	margin-top: 121px;
+	&__title {
+		margin-bottom: 10px;
+	}
+	&-carousel {
+		.owl-nav {
+			margin-top: -50px;
+			position: relative;
+		}
+		.owl-prev {
+			margin-right: 25px;
+		}
+	}
+}
+.cont-phoot {
+	display: block;
+}
