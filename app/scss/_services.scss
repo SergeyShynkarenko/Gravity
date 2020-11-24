@@ -23,9 +23,11 @@
 .works-carousel {
 	margin-top: 99px;
 }
-.works-carousel .item, .works-carousel .owl-item {
-	width: 825px !important;
-	position: relative;
+@media screen and (min-width: 992px) {
+	.works-carousel .item, .works-carousel .owl-item {
+		width: 825px !important;
+		position: relative;
+	}	
 }
 .works-carousel .owl-prev {
 	margin-right: 25px !important;
