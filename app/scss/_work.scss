@@ -21,6 +21,7 @@
 	&-wrap {
 		flex-wrap: wrap;
 		margin-top: 108px;
+		margin-bottom: 52px;
 		&__item {
 			margin-bottom: 30px;
 			position: relative;
@@ -49,6 +50,13 @@
 				}
 			}
 		}	
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		font-weight: 28px;
+		color: #222222;
+		opacity: 0.7;
 	}
 }
 
